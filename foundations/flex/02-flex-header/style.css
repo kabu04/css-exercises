@@ -1,6 +1,15 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+
+  /* ** Display the elements in horizontal order: Left(one,two,three)  Logo  Right(four,five,six) */
+  display: flex;
+  /* ** Space them horizontally, similar to desired outcome */
+  justify-content: space-between;
+  /* ** Center the items vertically */
+  align-items: center;
+  /* Logo was touching the Borders. So add padding so its similar to desired outcome */
+  padding: 8px;
 }
 
 .logo {
@@ -14,6 +23,15 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+
+  /* ** Display elements in horizontal order: one, two, three */
+  display: flex;
+  /* ** ul elements have default margin and padding. Setting margin to 0 removes the margin */
+  margin: 0;
+  /* ** set padding to 0 to remove the default padding on the left.*/
+  padding: 0;
+  /* ** space between one, two, three */
+  gap: 15px;
 }
 
 a {
