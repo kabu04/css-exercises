@@ -46,3 +46,37 @@ a {
 ul {
   list-style-type: none;
 }
+
+
+/* ** My code ** */
+
+/* Header contains two div containers for the content*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+/* Remove default margin,padding */
+/* Introduce space between each link listed -> gap*/
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+/* Logo and 3 links */
+.first-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Button and pfp */
+.second-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
