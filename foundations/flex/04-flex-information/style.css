@@ -24,3 +24,51 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* ** My code ** */
+
+/* Contains title and main container.
+   32px between title and all other items. */
+body {
+  /* display: flex; Put this here so we could align elements vertical order. However... */
+  /* flex-direction: column;  -> Since elements are stacked on top of each other by default, this is not needed here. */
+  /* gap: 32px; without flex, this gap is useless since it requires flex */
+  text-align: center;
+}
+
+/* Center the title horizontally */ 
+.title {
+  /* I had used flex in order to use justify-content: center. Since this was the first way I thought
+     of how to center text. However, the parent property just does text-align.*/ 
+
+  /* display: flex; */
+  /* justify-content: center; */
+
+  margin-bottom: 32px;
+}
+
+/* Contains 4 containers. Each with img and subtext */
+.main-container {
+  display: flex;
+  justify-content: center; /* This allowed the elements to expand from the center */
+  gap: 52px;
+}
+
+/* Centers the image and subtext horizontally */
+.first-sub-container, .second-sub-container, .third-sub-container, .fourth-sub-container {
+  /* I had added flex to use flex-direction so content would be on top of each other. 
+     Also so i could use align-items to center text. However default behaviour is for items to be on 
+     top of each other and we can just center text via parent property (text-align) */
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: center; */
+
+  width: 200px;
+}
+
+/* Center text */
+/*
+.text {
+  text-align: center;
+} */
